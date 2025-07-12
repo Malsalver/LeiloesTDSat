@@ -21,13 +21,13 @@ public class conectaDAO {
         Connection conn = null;
         
         try {
-        
-            conn = DriverManager.getConnection("jdbc:mysql://localhost/uc11?user=root&password=");
-            
+            conn = DriverManager.getConnection(
+                "jdbc:mysql://localhost:3306/uc11", "root", "Bbradoke80*"
+            );
         } catch (SQLException erro){
-            JOptionPane.showMessageDialog(null, "Erro ConectaDAO" + erro.getMessage());
+            JOptionPane.showMessageDialog(null, "Erro ConectaDAO: " + erro.getMessage());
         }
+        
         return conn;
     }
-    
 }
