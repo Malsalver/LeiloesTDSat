@@ -169,7 +169,7 @@ public class cadastroVIEW extends javax.swing.JFrame {
 
     } catch (NumberFormatException e) {
         JOptionPane.showMessageDialog(this, "Digite um valor numérico válido para o campo 'Valor'.");
-    } catch (Exception ex) {
+    } catch (Exception ex) { 
         JOptionPane.showMessageDialog(this, "Erro inesperado: " + ex.getMessage());
     }
     }//GEN-LAST:event_btnCadastrarActionPerformed
@@ -177,6 +177,7 @@ public class cadastroVIEW extends javax.swing.JFrame {
     private void btnProdutosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProdutosActionPerformed
         listagemVIEW listagem = new listagemVIEW(); 
         listagem.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_btnProdutosActionPerformed
 
     /**
